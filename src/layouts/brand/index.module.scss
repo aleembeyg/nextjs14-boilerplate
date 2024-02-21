@@ -1,0 +1,23 @@
+.brandContainer {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  div.content {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      display: inline-block;
+      width: auto;
+      margin: auto;
+    }
+    .logoImage {
+      max-width: 100px;
+      margin: auto;
+    }
+  }
+}

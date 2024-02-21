@@ -1,0 +1,22 @@
+{
+  "extends": "next/core-web-vitals",
+  "plugins": [
+    // ...
+    "react-hooks"
+  ],
+  "rules": {
+    // ...
+    "react-hooks/rules-of-hooks": "off", // tried each
+    "react-hooks/exhaustive-deps": "off", // tried each
+    "@next/next/no-img-element": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.js"],
+      "rules": {
+        "react-hooks/rules-of-hooks": "off", // tried each
+        "react-hooks/exhaustive-deps": "off" // tried each
+      }
+    }
+  ]
+}

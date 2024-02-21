@@ -1,0 +1,110 @@
+$primary-color: #0059ff;
+$font-color: #222222;
+
+@mixin respond($breakpoint) {
+  // $breakpoint is simply a variable that can have several values
+  @if $breakpoint==extralargeScreen {
+    @media only screen and (max-width: 1600px) {
+      @content;
+    }
+  } 
+  @if $breakpoint==midlargeScreen {
+    @media only screen and (min-width: 1480px) and (max-width: 1800px) {
+      @content;
+    }
+  } 
+  @if $breakpoint==dashboardMidLargeScreen {
+    @media only screen and (max-width: 1500px) {
+      @content;
+    }
+  } 
+  @if $breakpoint==largeScreen {
+    @media only screen and (max-width: 1320px) {
+      @content;
+    }
+  }
+  @if $breakpoint==laptop {
+    @media only screen and (max-width: 1260px) {
+      @content;
+    }
+  }
+  @if $breakpoint==minlaptop {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==largeTab {
+    @media only screen and (max-width: 1100px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==midTab {
+    @media only screen and (max-width: 980px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==muiMobile {
+    @media only screen and (max-width: 899px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==minTab {
+    @media only screen and (max-width: 767px) {
+      @content; 
+    }
+  }
+  @if $breakpoint==largeMobile {
+    @media only screen and (max-width: 640px) {
+      @content;
+    }
+  }
+  @if $breakpoint==muilargeMobile {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint==midMobile {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xmidMobile {
+    @media only screen and (max-width: 425px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==smMobile {
+    @media only screen and (max-width: 380px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xsmMobile {
+    @media only screen and (max-width: 360px) {
+      @content;
+    }
+  }
+  @if $breakpoint==xxsmMobile {
+    @media only screen and (max-width: 320px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==fold {
+    @media only screen and (max-width: 319px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import "./variables.scss";
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  font-style: normal;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Poppins-Bold.ttf");
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 10px;
+}
+
+/* Horizontal scrollbar */
+::-webkit-scrollbar:horizontal {
+  height: 4px;
+}
+
+::-webkit-scrollbar-track:horizontal {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #c0c0c0;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 10px;
+}
+
+* {
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  color: $font-color;
+  padding: 0;
+  margin: 0;
+}
+
+section.coming-soon {
+  background: url(https://trendytheme.net/demo/materialcomingsoon/assets/img/banner-1.jpg);
+  min-height: 100vh;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.MuiTypography-body1,
+.MuiTypography-body2 {
+  font-family: Poppins-Light, sans-serif !important;
+}
+
+.MuiTypography-h1,
+.MuiTypography-h2,
+.MuiTypography-h3,
+.MuiTypography-h4 {
+  font-family: Poppins-Bold, sans-serif !important;
+}
